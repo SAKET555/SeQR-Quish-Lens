@@ -1,0 +1,25 @@
+# Environment variables and API keys
+.env
+.env.local
+.env.development
+.env.production
+*.env
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest cache
+.pytest_cache/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+
+# Generated sample QR codes (optional)
+# sample_qrs/
+
+# OS specific files
+.DS_Store
+Thumbs.db
