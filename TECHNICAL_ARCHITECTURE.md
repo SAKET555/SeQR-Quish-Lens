@@ -734,7 +734,10 @@ class RedirectAnalyzer:
 
 #### Base64 URL Identifier Encoding Standard
 Per the VirusTotal API v3 specification, target URLs must be converted into a URL-safe Base64 string without trailing `=` padding:
-$$\text{vt\_id} = \text{base64url\_encode}(\text{url}).\text{rstrip}('=')$$
+
+```text
+vt_id = base64url_encode(url).rstrip('=')
+```
 
 #### Implementation Specification
 ```python
@@ -1011,7 +1014,7 @@ $$S_{\text{vt}} = \min\left(100, R_{\text{vt}} \cdot 3.5\right)$$
 ### 6.4 Hybrid Fusion Equation
 When VirusTotal cloud intelligence is active ($N_{\text{total}} > 0$), the raw combined score $S_{\text{combined}}$ fuses cloud data (60%) and local heuristics (40%):
 
-$$S_{\text{combined}} = \left(0.60 \cdot S_{\text{vt}}\right) + \left(0.40 \cdot S_{\text{base}}\right)$$
+$$S_{\text{combined}} = (0.60 \cdot S_{\text{vt}}) + (0.40 \cdot S_{\text{base}})$$
 
 ### 6.5 Consensus Overrides & False Positive Suppression
 To prevent single niche engine false positives from distorting legitimate site scores, consensus logic applies the following piecewise threshold:
