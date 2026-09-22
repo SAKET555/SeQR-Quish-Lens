@@ -99,3 +99,9 @@ Select any scenario from the sidebar dropdown **"Load Sample QR Scenario"**:
 
 ## 📜 Technical Architecture & Documentation
 For a deep dive into system design, technical architecture, and module breakdown, refer to [TECHNICAL_ARCHITECTURE.md](file:///c:/Users/HP/CyberAssignment/TECHNICAL_ARCHITECTURE.md).
+
+---
+
+## ⚖️ License
+Licensed under the **Apache License, Version 2.0**. See [LICENSE](file:///c:/Users/HP/CyberAssignment/LICENSE) for full details.
+
